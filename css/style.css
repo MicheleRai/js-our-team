@@ -3,3 +3,14 @@
     padding: 0;
     box-sizing: border-box;
 }
+.card-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

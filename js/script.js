@@ -18,6 +18,7 @@ Angela Lopez	Social Media Manager	angela-lopez-social-media-manager.jpg
 Scott Estrada	Developer	scott-estrada-developer.jpg
 Barbara Ramos	Graphic Designer	barbara-ramos-graphic-designer.jpg*/
 
+const cardContainer = document.querySelector('.card-container')
 const arrTeam = [
     {
         name: 'Wayne Barnett',
@@ -50,3 +51,29 @@ const arrTeam = [
         photo: 'barbara-ramos-graphic-designer.jpg',
     },
 ];
+
+for (let i = 0; i < arrTeam.length; i++) {
+    const member = arrTeam[i];
+    console.log(member);
+    const cardMember = document.createElement('div');
+    cardMember.classList.add('card');
+    //cardMember.innerHTML = member;
+    cardContainer.append(cardMember);
+
+    let cardMemberPh = document.createElement('img');
+    cardMemberPh.innerHTML = ${arrTeam[i].photo};
+    cardMember.append(cardMemberPh);
+
+
+    let cardMemberNm = document.createElement('div');
+    cardMemberNm.innerHTML = ${arrTeam[i].name};
+    cardMember.append(cardMemberNm);
+
+    let cardMemberJb = document.createElement('div');
+    cardMemberJb.innerHTML = ${arrTeam[i].job};
+    cardMember.append = (cardMemberJb);
+}
+
+for (let i = 0; i < arrStudents.length; i++) {
+	console.log(`Studente numero ${i}: ${arrStudents[i].name.lastName} ${arrStudents[i].lastName}`);
+}
