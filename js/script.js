@@ -60,17 +60,17 @@ for (let i = 0; i < arrTeam.length; i++) {
     //cardMember.innerHTML = member;
     cardContainer.append(cardMember);
 
-    let cardMemberPh = document.createElement('img');
-    cardMemberPh.innerHTML =`${i}: ${arrTeam[i].photo}`;
+    let cardMemberPh = document.createElement('div');
+    cardMemberPh.innerHTML =`${arrTeam[i].photo}`;
     cardMember.append(cardMemberPh);
 
 
     let cardMemberNm = document.createElement('div');
-    cardMemberNm.innerHTML =`${i}: ${arrTeam[i].name}`;
+    cardMemberNm.innerHTML =`${arrTeam[i].name}`;
     cardMember.append(cardMemberNm);
 
     let cardMemberJb = document.createElement('div');
-    cardMemberJb.innerHTML =`${i}: ${arrTeam[i].job}`;
+    cardMemberJb.innerHTML =`${arrTeam[i].job}`;
     cardMember.append(cardMemberJb);
 }
 
