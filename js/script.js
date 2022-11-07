@@ -61,7 +61,7 @@ for (let i = 0; i < arrTeam.length; i++) {
     cardContainer.append(cardMember);
 
     let cardMemberPh = document.createElement('div');
-    cardMemberPh.innerHTML =`${arrTeam[i].photo}`;
+    cardMemberPh.innerHTML =`<img src="${arrTeam[i].photo}" alt="">`;
     cardMember.append(cardMemberPh);
 
 
