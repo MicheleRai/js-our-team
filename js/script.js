@@ -61,16 +61,16 @@ for (let i = 0; i < arrTeam.length; i++) {
     cardContainer.append(cardMember);
 
     let cardMemberPh = document.createElement('img');
-    cardMemberPh.innerHTML = ${arrTeam[i].photo};
+    cardMemberPh.innerHTML =`${i}: ${arrTeam[i].photo}`;
     cardMember.append(cardMemberPh);
 
 
     let cardMemberNm = document.createElement('div');
-    cardMemberNm.innerHTML = ${arrTeam[i].name};
+    cardMemberNm.innerHTML =`${i}: ${arrTeam[i].name}`;
     cardMember.append(cardMemberNm);
 
     let cardMemberJb = document.createElement('div');
-    cardMemberJb.innerHTML = ${arrTeam[i].job};
-    cardMember.append = (cardMemberJb);
+    cardMemberJb.innerHTML =`${i}: ${arrTeam[i].job}`;
+    cardMember.append(cardMemberJb);
 }
 
