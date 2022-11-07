@@ -74,6 +74,3 @@ for (let i = 0; i < arrTeam.length; i++) {
     cardMember.append = (cardMemberJb);
 }
 
-for (let i = 0; i < arrStudents.length; i++) {
-	console.log(`Studente numero ${i}: ${arrStudents[i].name.lastName} ${arrStudents[i].lastName}`);
-}
